@@ -9,12 +9,11 @@ body {
 /* navbar */
 .logo {
   float: left;
-  background-color: rgb(255,0,0,0.9);
+  background-color: rgba(255, 92, 51,0.9);
 }
 
 
 /* Carousel */
-
 header.carousel {
     height: 50%;
 }
@@ -30,4 +29,41 @@ header.carousel .fill {
     height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.copyright {
+   color:#cccbcb;
+   background-color: #4A4A4A;
+   text-align: center;
+   font-family: 'Roboto', serif;
+   font-size: 18px;
+}
+
+.bottom {
+   color:white;
+   background-color: #333333;
+   text-align: center;
+   font-size: 14px;
+   font-family: 'Roboto', black, sans-serif;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+
+/* Responsive tablet */
+@media(max-width:1024px) {
+}
+
+/* Responsive movil */
+@media(max-width:768px) {
+    header.carousel .carousel {
+        height: 70%;
+    }
 }
