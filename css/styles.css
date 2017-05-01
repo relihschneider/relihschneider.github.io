@@ -12,7 +12,6 @@ body {
   background-color: rgba(255, 92, 51,0.9);
 }
 
-
 /* Carousel */
 header.carousel {
     height: 50%;
@@ -31,7 +30,14 @@ header.carousel .fill {
     background-size: cover;
 }
 
+/* portfolio */
+.img-portfolio {
+    margin-bottom: 30px;
+}
 
+.img-hover:hover {
+    opacity: 0.8;
+}
 
 /* Footer */
 footer {
