@@ -4,8 +4,26 @@ html,body {
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 50px; /* padding para el navegador fixed top */
 }
+
+
+section {
+    padding-bottom: 100px;
+}
+/* para los links */
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: grey;
+}
+a:hover,
+a:focus {
+  color: white;
+}
+
+
 /* navbar */
 .logo {
   float: left;
@@ -14,7 +32,7 @@ body {
 
 /* Carousel */
 header.carousel {
-    height: 50%;
+    height: 70%;
 }
 
 header.carousel .item,
@@ -31,41 +49,80 @@ header.carousel .fill {
 }
 
 /* portfolio */
-.img-portfolio {
-    margin-bottom: 30px;
+.portfolio1 {
+    background-color: #eee;
 }
 
 .img-hover:hover {
-    opacity: 0.8;
+    opacity: 0.3;
 }
+
+.portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+/* Fondo */
+
+.seccion-fondo {
+  background-image:url("../img/fondo.jpg");
+  min-height: 400px;
+}
+
+
 
 /* Footer */
-footer {
-    width: 100%;
-    margin-top: 50px;
+.footer1 {
+  background-color: #222222;
+  color: rgba(255, 255, 255, 0.3);
+  padding-top: 0px;
+  text-align: center;
+  color:#cccbcb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
-.copyright {
-   color:#cccbcb;
-   background-color: #4A4A4A;
-   text-align: center;
-   font-family: 'Roboto', serif;
-   font-size: 18px;
+.footer2 {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.3);
+  padding-top: 0px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-.bottom {
-   color:white;
-   background-color: #333333;
-   text-align: center;
-   font-size: 14px;
-   font-family: 'Roboto', black, sans-serif;
-   padding-bottom: 20px;
-   padding-top: 20px;
+ul.redes {
+  margin-bottom: 0;
+}
+ul.redes li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.redes li a:hover,
+ul.redes li a:focus,
+ul.redes li a:active {
+  background-color: grey;
 }
 
 /* Responsive tablet */
 @media(max-width:1024px) {
-}
+
 
 /* Responsive movil */
 @media(max-width:768px) {
